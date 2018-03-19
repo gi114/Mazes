@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:11:29: missing parameter type for expanded function ((x$1: <error>) => Loc(x$1, -1))[0m
+[0m[[0m[31merror[0m] [0m[0m  val outOfBound = List(Loc(_,-1), Loc(-1,_), Loc(_, 11), Loc(10, _))[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:11:43: missing parameter type for expanded function ((x$2: <error>) => Loc(-1, x$2))[0m
+[0m[[0m[31merror[0m] [0m[0m  val outOfBound = List(Loc(_,-1), Loc(-1,_), Loc(_, 11), Loc(10, _))[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:11:51: missing parameter type for expanded function ((x$3: <error>) => Loc(x$3, 11))[0m
+[0m[[0m[31merror[0m] [0m[0m  val outOfBound = List(Loc(_,-1), Loc(-1,_), Loc(_, 11), Loc(10, _))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:11:67: missing parameter type for expanded function ((x$4: <error>) => Loc(10, x$4))[0m
+[0m[[0m[31merror[0m] [0m[0m  val outOfBound = List(Loc(_,-1), Loc(-1,_), Loc(_, 11), Loc(10, _))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

@@ -1,0 +1,27 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/mazes_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Direction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Direction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Mazes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/Mazes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Direction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Direction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Loc$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Loc$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazeBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazeBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Loc.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Loc.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecursiveMaze$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/RecursiveMaze$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Mazes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/Mazes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazeBuilder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazeBuilder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecursiveMaze.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/RecursiveMaze.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MazePosition.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
