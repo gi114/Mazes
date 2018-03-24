@@ -26,8 +26,8 @@ class Maze (val height: Int, val width: Int, val walls: Set[Loc], val visited: S
   }
 
   def printCell(y: Int, x: Int): Unit = {
-    if (walls.contains(Loc(x, y))) print(' ' + -1)
-    else print(' ' + 0)
+    if (walls.contains(Loc(x, y))) print('*')
+    else print(' ')
   }
 
   def openNorth(loc: Loc): Boolean = openInDirection(loc, North)

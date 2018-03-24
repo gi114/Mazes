@@ -10,6 +10,8 @@ object MazePosition {
 
   }
 
+  case class Wall(x: Int, y: Int)
+
   val North = Direction(0,-1)
   val South = Direction(0,1)
   val West = Direction(-1,0)
