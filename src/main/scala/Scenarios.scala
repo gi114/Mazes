@@ -1,4 +1,3 @@
-import MazeBuilder.Maze
 import MazePosition._
 
 object Scenarios {

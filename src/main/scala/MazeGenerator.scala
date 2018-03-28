@@ -1,8 +1,6 @@
 import MazePosition.{Loc, Wall}
-import TemplateBuilder.Template
 
-trait MazeGenerator {
-
+class MazeGenerator {
 
   def partitionEither[A, B](s: Seq[Either[A, B]]): (Seq[A], Seq[B]) =
     s.foldRight(Seq.empty[A], Seq.empty[B]) {
@@ -10,29 +8,28 @@ trait MazeGenerator {
     }
 
   val height = TemplateBuilder.getTemplate.length
-  val width = TemplateBuilder.getTemplate(height).length
+  val width = TemplateBuilder.getTemplate(0).length
 
   def explore[T](set: Set[T]): List[T] = set.toList
 
-  def mapMaze(): List[(Seq[Loc], Seq[Wall])] = {
+  /*def mapMaze(): List[(Seq[Loc], Seq[Wall])] = {
     (0 to height).toList.flatMap(y => mapRow(y))
-  }
+  }*/
 
 
-  def mapRow(y: Int): List[(Seq[Loc], Seq[Wall])] = {
+  /*def mapRow(y: Int): List[(Seq[Loc], Seq[Wall])] = {
     for (list <- (0 to width).toList.map(x => mapCell(y, x).toSeq)) yield
       partitionEither(list)
-  }
+  }*/
 
-  def mapCell(y: Int, x: Int): Either[Throwable, Either[Loc, Wall]] = {
-    TemplateBuilder.getLocationValue(Loc(x,y)) match {
-      case -1 => Right(Right(Wall(x,y)))
-      case 0 => Right(Left(Loc(x,y)))
-      case _ => Left(new Exception("example exception"))
+  def mapCell(y: Int, x: Int): Either[Loc, Wall] = {
+    TemplateBuilder.getLocationValue(Loc(x,y)).toSeq.head match {
+      case -1 => Right(Wall(x,y))
+      case 0 => Left(Loc(x,y))
     }
   }
 
-  def build(template: Template): Maze
+  //def build(template: Template): Maze
 
   /*def buildImpl(current: Loc, maze: Maze, template: Template): Maze = {
     var newmaze = maze.markVisited(current)
@@ -51,3 +48,4 @@ trait MazeGenerator {
   }*/
 
 }
+

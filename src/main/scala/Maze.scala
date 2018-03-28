@@ -1,6 +1,6 @@
 import MazePosition._
 
-class Maze (val height: Int, val width: Int, val walls: Set[Loc], val visited: Set[Loc]) {
+class Maze(val height: Int, val width: Int, val walls: Set[Loc], val visited: Set[Loc]) {
 
   def markVisited(loc: Loc): Maze = {
     new Maze(height, width, walls, visited + loc)
@@ -18,7 +18,7 @@ class Maze (val height: Int, val width: Int, val walls: Set[Loc], val visited: S
   }
 
   def printMaze(): Unit = {
-    (0 to height).toList.map(y => printRow(y) {println})
+    (0 to height).toList.map(y => printRow(y))
   }
 
   def printRow(y: Int): Unit = {

@@ -4,9 +4,16 @@ object MazePosition {
   case class Direction(dx: Int, dy: Int)
 
   case class Loc(x: Int, y: Int) {
+
     def +(that: Direction): Loc = Loc(x + that.dx, y + that.dy)
+
     def inBounds: Boolean =
       this.x >= 0 && this.x < 15 && this.y >= 0 && this.y < 15
+
+    def validLocation: Option[Loc] = {
+      if (this.inBounds) Some(this)
+      else None
+    }
 
   }
 
