@@ -7,20 +7,21 @@ class MazeGenerator {
       case (e, (as, bs)) => e.fold(a => (a+: as, bs), b => (as, b+: bs))
     }
 
+
   val height = TemplateBuilder.getTemplate.length
   val width = TemplateBuilder.getTemplate(0).length
 
   def explore[T](set: Set[T]): List[T] = set.toList
 
-  /*def mapMaze(): List[(Seq[Loc], Seq[Wall])] = {
-    (0 to height).toList.flatMap(y => mapRow(y))
-  }*/
+  def mapMaze(): Seq[Wall] = {
+    (0 until height).flatMap(y => mapRow(y))
+  }
 
-
-  /*def mapRow(y: Int): List[(Seq[Loc], Seq[Wall])] = {
-    for (list <- (0 to width).toList.map(x => mapCell(y, x).toSeq)) yield
-      partitionEither(list)
-  }*/
+  def mapRow(y: Int): Seq[Wall] = {
+    val seq = (0 until height).toList.map(x => mapCell(y, x))
+    partitionEither(seq)._2
+  }
+  //List[(Seq[Loc], Seq[Wall])]
 
   def mapCell(y: Int, x: Int): Either[Loc, Wall] = {
     TemplateBuilder.getLocationValue(Loc(x,y)).toSeq.head match {

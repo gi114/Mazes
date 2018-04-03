@@ -2,6 +2,12 @@ import MazePosition._
 
 class Maze(val height: Int, val width: Int, val walls: Set[Loc], val visited: Set[Loc]) {
 
+  implicit val temp = TemplateBuilder.getTemplate
+
+  def this(walls: Set[Loc], visited: Set[Loc]) {
+    this(15, 15, walls, visited)
+  }
+
   def markVisited(loc: Loc): Maze = {
     new Maze(height, width, walls, visited + loc)
   }

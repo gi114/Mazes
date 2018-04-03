@@ -1,5 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/TemplateBuilder.scala:24:11: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: None[0m
-[0m[[0m[33mwarn[0m] [0m[0m      loc.validLocation match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazeGenerator.scala:18:37: No implicit view available from MazePosition.Wall => scala.collection.GenTraversableOnce[B].[0m
+[0m[[0m[31merror[0m] [0m[0m      val res = mapRow(y)._2.toList.flatten[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
