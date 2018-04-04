@@ -7,7 +7,6 @@ class MazeGenerator {
       case (e, (as, bs)) => e.fold(a => (a+: as, bs), b => (as, b+: bs))
     }
 
-
   val height = TemplateBuilder.getTemplate.length
   val width = TemplateBuilder.getTemplate(0).length
 
@@ -21,7 +20,6 @@ class MazeGenerator {
     val seq = (0 until height).toList.map(x => mapCell(y, x))
     partitionEither(seq)._2
   }
-  //List[(Seq[Loc], Seq[Wall])]
 
   def mapCell(y: Int, x: Int): Either[Loc, Wall] = {
     TemplateBuilder.getLocationValue(Loc(x,y)).toSeq.head match {
