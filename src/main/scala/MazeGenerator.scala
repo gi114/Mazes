@@ -12,13 +12,13 @@ class MazeGenerator {
 
   def explore[T](set: Set[T]): List[T] = set.toList
 
-  def mapMaze(): Seq[Wall] = {
+  def mapMaze(): Seq[Loc] = {
     (0 until height).flatMap(y => mapRow(y))
   }
 
-  def mapRow(y: Int): Seq[Wall] = {
+  def mapRow(y: Int): Seq[Loc] = {
     val seq = (0 until height).toList.map(x => mapCell(y, x))
-    partitionEither(seq)._2
+    partitionEither(seq)._1
   }
 
   def mapCell(y: Int, x: Int): Either[Loc, Wall] = {
@@ -28,7 +28,10 @@ class MazeGenerator {
     }
   }
 
-  //def build(template: Template): Maze
+  def build(): Maze = {
+    val loc = mapMaze().toSet
+    new Maze(height, width, loc, Set[Loc]())
+  }
 
   /*def buildImpl(current: Loc, maze: Maze, template: Template): Maze = {
     var newmaze = maze.markVisited(current)
