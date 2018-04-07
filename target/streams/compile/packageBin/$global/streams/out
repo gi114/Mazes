@@ -30,6 +30,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Loc.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	NoSuchTemplateElementException$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/NoSuchTemplateElementException$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RandomMaze.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/RandomMaze.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DFSMaze.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/DFSMaze.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MazeGenerator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazeGenerator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Scenarios$.class[0m

@@ -1,4 +1,3 @@
-
 object MazePosition {
 
   case class Direction(dx: Int, dy: Int)
@@ -13,6 +12,11 @@ object MazePosition {
     def validLocation: Option[Loc] = {
       if (this.inBounds) Some(this)
       else None
+    }
+
+    def updatePath(path: Set[Loc]): Set[Loc] = {
+      if (path.contains(this)) path
+      else path + this
     }
 
   }

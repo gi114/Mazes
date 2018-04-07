@@ -1,19 +1,27 @@
 import MazePosition._
 
-class Maze(val height: Int, val width: Int, val walls: Set[Loc], val visited: Set[Loc]) {
+trait Maze
+
+class RandomMaze(val height: Int, val width: Int, val locations: Set[Loc]) {
+  def findNeighbors(current: Loc): Set[Loc] = {
+    directions.map(current + _).filter(_.inBounds).intersect(locations)
+  }
+}
+
+class DFSMaze(val height: Int, val width: Int, val locations: Set[Loc], val visited: Set[Loc]) {
 
   implicit val temp = TemplateBuilder.getTemplate
 
-  def this(walls: Set[Loc], visited: Set[Loc]) {
-    this(15, 15, walls, visited)
+  def this(locations: Set[Loc], visited: Set[Loc]) {
+    this(15, 15, locations, visited)
   }
 
-  def markVisited(loc: Loc): Maze = {
-    new Maze(height, width, walls, visited + loc)
+  def markVisited(loc: Loc): DFSMaze = {
+    new DFSMaze(height, width, locations, visited + loc)
   }
 
-  def addWall(wall: Loc): Maze =
-    new Maze(height, width, walls + wall, visited)
+  /*def addWall(wall: Loc): Maze =
+    new Maze(height, width, walls + wall, visited)*/
 
   def isVisited(loc: Loc): Boolean = {
     visited.contains(loc)
@@ -32,8 +40,8 @@ class Maze(val height: Int, val width: Int, val walls: Set[Loc], val visited: Se
   }
 
   def printCell(y: Int, x: Int): Unit = {
-    if (walls.contains(Loc(x, y))) print('*')
-    else print(' ')
+    if (locations.contains(Loc(x, y))) print(' ')
+    else print('*')
   }
 
   def openNorth(loc: Loc): Boolean = openInDirection(loc, North)
@@ -42,7 +50,6 @@ class Maze(val height: Int, val width: Int, val walls: Set[Loc], val visited: Se
   def openSouth(loc: Loc): Boolean = openInDirection(loc, South)
 
   private def openInDirection(loc: Loc, dir: Direction): Boolean =
-    !walls.contains(loc + dir)
-
+    locations.contains(loc + dir)
 
 }
