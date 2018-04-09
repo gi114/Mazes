@@ -4,7 +4,7 @@ import scala.util.Random
 object Scenarios {
   val exitLoc = Loc(2,2)
 
-  def buildMap: RandomMaze = {
+  def buildMap: Maze = {
     val generator = new MazeGenerator
     generator.build()
   }
@@ -14,12 +14,8 @@ object Scenarios {
   }
 
 
-
-  def randomWalk(maze: RandomMaze, currentLoc: Loc, path: Set[Loc])(implicit rnd: Random): Set[Loc] = {
-    if (currentLoc == exitLoc ) {
-      println(path)
-      path
-    }
+  def randomWalk(maze: Maze, currentLoc: Loc, path: Set[Loc])(implicit rnd: Random): Set[Loc] = {
+    if (currentLoc == exitLoc ) path
     else {
       val neighbors = maze.findNeighbors(currentLoc).toVector
       val neighbor = nextLocation(neighbors)
@@ -42,6 +38,15 @@ object Scenarios {
       answer
     }*/
 
+  }
+
+  def rightHand(maze: Maze, currentLoc: Loc, direction: Direction, path: Set[Loc]): Set[Loc] = {
+    if (currentLoc == exitLoc ) path
+    else {
+      val direction = maze.findNextAvailableDirection(currentLoc, direction)
+      val updateLoc = currentLoc.updateDirection(direction)
+      rightHand(maze, updateLoc, direction, path)
+    }
   }
 }
 

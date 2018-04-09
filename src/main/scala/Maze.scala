@@ -1,11 +1,30 @@
 import MazePosition._
 
-trait Maze
 
-class RandomMaze(val height: Int, val width: Int, val locations: Set[Loc]) {
+class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited: Set[Loc]) {
+
+  def this(height: Int, width: Int, locations: Set[Loc]) {
+    this(height, width, locations, Set.empty[Loc])
+  }
+
   def findNeighbors(current: Loc): Set[Loc] = {
     directions.map(current + _).filter(_.inBounds).intersect(locations)
   }
+
+  def findNextAvailableDirection(current: Loc, currentDirection: Direction): Direction = {
+    val dir = getRightMostDirections(currentDirection)
+    if (openInDirection(current, dir)) dir
+    else currentDirection
+  }
+
+  def openNorth(loc: Loc): Boolean = openInDirection(loc, North)
+  def openWest(loc: Loc): Boolean = openInDirection(loc, West)
+  def openEast(loc: Loc): Boolean = openInDirection(loc, East)
+  def openSouth(loc: Loc): Boolean = openInDirection(loc, South)
+
+  private def openInDirection(loc: Loc, dir: Direction): Boolean =
+    locations.contains(loc + dir)
+
 }
 
 class DFSMaze(val height: Int, val width: Int, val locations: Set[Loc], val visited: Set[Loc]) {
@@ -43,13 +62,5 @@ class DFSMaze(val height: Int, val width: Int, val locations: Set[Loc], val visi
     if (locations.contains(Loc(x, y))) print(' ')
     else print('*')
   }
-
-  def openNorth(loc: Loc): Boolean = openInDirection(loc, North)
-  def openWest(loc: Loc): Boolean = openInDirection(loc, West)
-  def openEast(loc: Loc): Boolean = openInDirection(loc, East)
-  def openSouth(loc: Loc): Boolean = openInDirection(loc, South)
-
-  private def openInDirection(loc: Loc, dir: Direction): Boolean =
-    locations.contains(loc + dir)
 
 }

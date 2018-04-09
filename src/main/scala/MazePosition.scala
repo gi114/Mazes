@@ -1,3 +1,4 @@
+
 object MazePosition {
 
   case class Direction(dx: Int, dy: Int)
@@ -19,6 +20,10 @@ object MazePosition {
       else path + this
     }
 
+    def updateDirection(dir: Direction): Loc = {
+      this + dir
+    }
+
   }
 
   case class Wall(x: Int, y: Int)
@@ -27,9 +32,21 @@ object MazePosition {
   val South = Direction(0,1)
   val West = Direction(-1,0)
   val East = Direction(1,0)
-  val directions = Set(North, South, West, East)
+  val directions = Set(North, East, South, West)
+
+  def getRightMostDirections(currentDir: Direction): Direction = {
+    currentDir match {
+      case West => North
+      case South => West
+      case East => South
+      case North => East
+    }
+  }
 
 }
+
+
+
 
 
 

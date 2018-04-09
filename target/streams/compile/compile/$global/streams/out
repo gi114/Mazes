@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/Scenarios.scala:23:38: recursive value path needs type[0m
-[0m[[0m[31merror[0m] [0m[0m      val path = neighbor.updatePath(path)[0m
-[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:33:30: ';' expected but '=' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  (West, South, East, North) = Value[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

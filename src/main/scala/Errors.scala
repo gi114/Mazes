@@ -3,3 +3,4 @@ sealed trait NotificationErrors {
 }
 
 case class NoSuchTemplateElementException(msg: String) extends  NotificationErrors
+

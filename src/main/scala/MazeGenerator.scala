@@ -1,7 +1,5 @@
 import MazePosition.{Loc, Wall}
 
-import scala.util.Random
-
 class MazeGenerator {
 
   def partitionEither[A, B](s: Seq[Either[A, B]]): (Seq[A], Seq[B]) =
@@ -30,9 +28,9 @@ class MazeGenerator {
     }
   }
 
-  def build(): RandomMaze = {
+  def build(): Maze = {
     val loc = mapMaze().toSet
-    new RandomMaze(height, width, loc)
+    new Maze(height, width, locations = loc)
   }
 
   /*def buildImpl(current: Loc, maze: Maze, template: Template): Maze = {
