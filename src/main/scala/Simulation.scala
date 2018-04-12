@@ -7,11 +7,10 @@ object Simulation extends MazeGenerator {
   def main(args: Array[String]): Unit = {
 
     val maze = Scenarios.buildMap
-    val startDirection = MazePosition.South
 
-    //println(Scenarios.randomWalk(maze, Loc(0,0), Set.empty[Loc])(Random))
+    Scenarios.randomWalk(maze, Loc(0,0), None, Set.empty[Loc])(Random)
 
-    Scenarios.rightHand(maze, Loc(0,0), startDirection, Set.empty[Loc])
+    //Scenarios.rightHand(maze, Loc(0,0), startDirection, Set.empty[Loc])
 
   }
 }

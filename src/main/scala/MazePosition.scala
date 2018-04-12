@@ -1,11 +1,19 @@
 
 object MazePosition {
 
-  case class Direction(dx: Int, dy: Int)
+  case class Direction(dx: Int, dy: Int) {
+
+    implicit val mask: (Int, Int) = (-1, -1)
+    def ! = Direction(this.dx * mask._1, this.dy * mask._2)
+
+  }
 
   case class Loc(x: Int, y: Int) {
 
     def +(that: Direction): Loc = Loc(x + that.dx, y + that.dy)
+    def --(loc: Loc): Direction = {
+      Direction(loc.x - this.x, loc.y - this.y)
+    }
 
     def inBounds: Boolean =
       this.x >= 0 && this.x < 15 && this.y >= 0 && this.y < 15
@@ -20,7 +28,7 @@ object MazePosition {
       else path + this
     }
 
-    def updateDirection(dir: Direction): Loc = {
+    def updateLocation(dir: Direction): Loc = {
       this + dir
     }
 

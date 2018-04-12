@@ -13,17 +13,24 @@ object Scenarios {
     locations(rnd.nextInt(locations.size))
   }
 
-
-  def randomWalk(maze: Maze, currentLoc: Loc, path: Set[Loc])(implicit rnd: Random): Set[Loc] = {
+  def randomWalk(maze: Maze, currentLoc: Loc, direction: Option[Direction], path: Set[Loc])(implicit rnd: Random): Set[Loc] = {
     if (currentLoc == exitLoc ) path
     else {
-      val neighbors = maze.findNeighbors(currentLoc).toVector
-      val neighbor = nextLocation(neighbors)
-      val updatePath = neighbor.updatePath(path)
-      randomWalk(maze, neighbor, updatePath)(rnd)
+      val neighbors = maze.findNeighbors(currentLoc, direction).toVector
+      println(neighbors)
+      val neighbor = neighbors.toList match {
+        case _::_ => nextLocation(neighbors)
+        /*going back*/
+        case Nil => direction.map(dir => currentLoc.updateLocation(dir!))
+      }
+      println(neighbor)
+      //val newDirection = currentLoc -- neighbor
+      //println(neighbors)
+      //val updatePath = neighbor.updatePath(path)
+      //println(neighbors)
+      path
+      //randomWalk(maze, neighbor, newDirection, updatePath)(rnd)
     }
-
-
 
 
     /*if (currentLoc == exitLoc) 0
@@ -43,9 +50,9 @@ object Scenarios {
   def rightHand(maze: Maze, currentLoc: Loc, direction: Direction, path: Set[Loc]): Set[Loc] = {
     if (currentLoc == exitLoc ) path
     else {
-      val direction = maze.findNextAvailableDirection(currentLoc, direction)
-      val updateLoc = currentLoc.updateDirection(direction)
-      rightHand(maze, updateLoc, direction, path)
+      val newDirection = maze.findNextAvailableDirection(currentLoc, direction)
+      val updateLoc = currentLoc.updateLocation(newDirection)
+      rightHand(maze, updateLoc, newDirection, path)
     }
   }
 }

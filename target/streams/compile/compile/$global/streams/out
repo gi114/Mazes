@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:33:30: ';' expected but '=' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  (West, South, East, North) = Value[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:46:5: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Direction(_, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    currentDir match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were two feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

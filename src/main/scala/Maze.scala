@@ -7,8 +7,12 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
     this(height, width, locations, Set.empty[Loc])
   }
 
-  def findNeighbors(current: Loc): Set[Loc] = {
-    directions.map(current + _).filter(_.inBounds).intersect(locations)
+  def findNeighbors(current: Loc, currDir: Option[Direction]): Set[Loc] = {
+    val possibleDirections = currDir match {
+      case Some(dir) => directions - (dir!)
+      case None => directions
+    }
+    possibleDirections.map(current + _).filter(_.inBounds).intersect(locations)
   }
 
   def findNextAvailableDirection(current: Loc, currentDirection: Direction): Direction = {
