@@ -23,14 +23,15 @@ object MazePosition {
       else None
     }
 
-    def updatePath(path: Set[Loc]): Set[Loc] = {
-      if (path.contains(this)) path
-      else path + this
+    def updatePath(path: List[Loc]): List[Loc] = {
+      path.::(this)
     }
 
     def updateLocation(dir: Direction): Loc = {
       this + dir
     }
+
+    def unapply = (List(this.x), List(this.y))
 
   }
 
@@ -50,6 +51,8 @@ object MazePosition {
       case North => East
     }
   }
+
+  case class Trajectory(x: List[Int], y: List[Int])
 
 }
 

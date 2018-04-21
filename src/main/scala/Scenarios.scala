@@ -2,7 +2,7 @@ import MazePosition._
 import scala.util.Random
 
 object Scenarios {
-  val exitLoc = Loc(2,2)
+  val exitLoc = Loc(14,14)
 
   def buildMap: Maze = {
     val generator = new MazeGenerator
@@ -13,37 +13,19 @@ object Scenarios {
     locations(rnd.nextInt(locations.size))
   }
 
-  def randomWalk(maze: Maze, currentLoc: Loc, direction: Option[Direction], path: Set[Loc])(implicit rnd: Random): Set[Loc] = {
-    if (currentLoc == exitLoc ) path
+  def randomWalk(maze: Maze, currentLoc: Loc, direction: Option[Direction], path: List[Loc])(implicit rnd: Random): List[Loc] = {
+    if (exitLoc == currentLoc) path
     else {
       val neighbors = maze.findNeighbors(currentLoc, direction).toVector
-      println(neighbors)
       val neighbor = neighbors.toList match {
         case _::_ => nextLocation(neighbors)
         /*going back*/
-        case Nil => direction.map(dir => currentLoc.updateLocation(dir!))
+        case Nil => direction.map(dir => currentLoc.updateLocation(dir!)).get
       }
-      println(neighbor)
-      //val newDirection = currentLoc -- neighbor
-      //println(neighbors)
-      //val updatePath = neighbor.updatePath(path)
-      //println(neighbors)
-      path
-      //randomWalk(maze, neighbor, newDirection, updatePath)(rnd)
+      val newDirection = currentLoc -- neighbor
+      val updatePath = neighbor.updatePath(path)
+      randomWalk(maze, neighbor, Some(newDirection), updatePath)(rnd)
     }
-
-
-    /*if (currentLoc == exitLoc) 0
-    else if (currentLoc.isOutBound) 1000000000
-    else {
-      MazeBuilder.setLocationValue(currentLoc, -2)// maze(x)(y) = -2
-      val answer = (shortestPath(maze, currentLoc + East, exitLoc) min
-        shortestPath(maze, currentLoc + West, exitLoc) min
-        shortestPath(maze, currentLoc + North, exitLoc) min
-        shortestPath(maze, currentLoc + South, exitLoc)) +1
-      MazeBuilder.setLocationValue(currentLoc, 0)// maze(x)(y) = -2
-      answer
-    }*/
 
   }
 
