@@ -28,6 +28,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/Maze.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Scenarios.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/Scenarios.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CSVWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/CSVWriter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Loc.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Loc.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	NoSuchTemplateElementException$.class[0m
@@ -44,4 +46,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/Simulation$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MazePosition$Trajectory$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/MazePosition$Trajectory$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CSVWriter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/CSVWriter$.class[0m
 [0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

@@ -4,6 +4,21 @@
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] sbt-chain: Checking cache for: dependency: au.com.bytecode#opencsv;2.4 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: au.com.bytecode#opencsv;2.4
+[debug] 	found au.com.bytecode#opencsv;2.4 in sbt-chain
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.0
@@ -23,6 +38,18 @@
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#mazes$sources;0.1 [runtime]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
@@ -35,6 +62,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->compile]
@@ -51,6 +90,18 @@
 [debug] == resolving dependencies for default#mazes$sources;0.1 [test]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [runtime]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
@@ -67,6 +118,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->compile]
@@ -127,6 +190,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->compile(*)]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test->default]
 [debug] sbt-chain: Checking cache for: dependency: org.scalamock#scalamock_2.12;4.1.0 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
 [debug] sbt-chain: module revision found in cache: org.scalamock#scalamock_2.12;4.1.0
@@ -214,6 +289,18 @@
 [debug] resolving dependencies for configuration 'compile-internal'
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile-internal]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
@@ -228,6 +315,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [optional]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [provided]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile-internal->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile-internal->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile-internal->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile-internal->compile]
@@ -244,6 +343,18 @@
 [debug] == resolving dependencies for default#mazes$sources;0.1 [runtime-internal]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [runtime]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
@@ -256,6 +367,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->compile]
@@ -269,6 +392,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->master]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [optional]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime-internal->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime-internal->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime-internal->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime-internal->compile]
@@ -286,6 +421,18 @@
 [debug] == resolving dependencies for default#mazes$sources;0.1 [test]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [runtime]
 [debug] == resolving dependencies for default#mazes$sources;0.1 [compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
@@ -298,6 +445,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [compile->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [runtime->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scala-lang#scala-library;2.12.0 [runtime->compile]
@@ -346,6 +505,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->compile(*)]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test->compile]
@@ -448,6 +619,18 @@
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile(*)]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalactic#scalactic_2.12;3.0.4 [test-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->default]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->default(compile)]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->runtime]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->compile]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->master]
+[debug] == resolving dependencies default#mazes$sources;0.1->au.com.bytecode#opencsv;2.4 [test-internal->master]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test-internal->default]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test-internal->runtime]
 [debug] == resolving dependencies default#mazes$sources;0.1->org.scalamock#scalamock_2.12;4.1.0 [test-internal->compile]
@@ -571,37 +754,26 @@
 [debug] circular dependency found: org.scala-lang.modules#scala-xml_2.12;1.0.5->org.scala-lang#scala-compiler;2.12.0->...
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.0!scala-library.jar(src)
-[debug] 		tried /Users/giuliaippoliti/.ivy2/local/org.objenesis/objenesis/1.0/srcs/objenesis-sources.jar
-[debug] 		tried /Users/giuliaippoliti/.ivy2/local/org.mockito/mockito-core/1.8.5/srcs/mockito-core-sources.jar
-[debug] 		tried /Users/giuliaippoliti/.ivy2/local/org.hamcrest/hamcrest-core/1.1/srcs/hamcrest-core-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/mockito/mockito-core/1.8.5/mockito-core-1.8.5-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.0!scala-compiler.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.0!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar
-[debug] 	[NOT REQUIRED] org.scalamock#scalamock_2.12;4.1.0!scalamock_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.0!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src)
+[debug] 		tried /Users/giuliaippoliti/.ivy2/local/au.com.bytecode/opencsv/2.4/srcs/opencsv-sources.jar
+[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/au/com/bytecode/opencsv/2.4/opencsv-2.4-sources.jar
 [debug] 	[NOT REQUIRED] jline#jline;2.14.1!jline.jar(src)
-[info] downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar
-[info] 	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar(src) (94ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.objenesis#objenesis;1.0!objenesis.jar(src) (97ms)
-[info] downloading https://repo1.maven.org/maven2/org/mockito/mockito-core/1.8.5/mockito-core-1.8.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-core/1.8.5/mockito-core-1.8.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/mockito/mockito-core/1.8.5/mockito-core-1.8.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/mockito/mockito-core/1.8.5/mockito-core-1.8.5-sources.jar
-[info] 	[SUCCESSFUL ] org.mockito#mockito-core;1.8.5!mockito-core.jar(src) (326ms)
-[debug] :: resolution report :: resolve 176ms :: artifacts dl 337ms
+[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.0!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.objenesis#objenesis;1.0!objenesis.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.0!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.mockito#mockito-core;1.8.5!mockito-core.jar(src)
+[debug] 	[NOT REQUIRED] org.scalamock#scalamock_2.12;4.1.0!scalamock_2.12.jar(src)
+[info] downloading https://repo1.maven.org/maven2/au/com/bytecode/opencsv/2.4/opencsv-2.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/au/com/bytecode/opencsv/2.4/opencsv-2.4-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/au/com/bytecode/opencsv/2.4/opencsv-2.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/au/com/bytecode/opencsv/2.4/opencsv-2.4-sources.jar
+[info] 	[SUCCESSFUL ] au.com.bytecode#opencsv;2.4!opencsv.jar(src) (885ms)
+[debug] :: resolution report :: resolve 204ms :: artifacts dl 898ms
 [debug] 	report for default#mazes$sources;0.1 compile produced in /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/resolution-cache/reports/default-mazes$sources-compile.xml
 [debug] 	report for default#mazes$sources;0.1 runtime produced in /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/resolution-cache/reports/default-mazes$sources-runtime.xml
 [debug] 	report for default#mazes$sources;0.1 test produced in /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/resolution-cache/reports/default-mazes$sources-test.xml
@@ -614,4 +786,4 @@
 [debug] 	report for default#mazes$sources;0.1 pom produced in /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/resolution-cache/reports/default-mazes$sources-pom.xml
 [debug] circular dependency found: org.scala-lang#scala-compiler;2.12.0->org.scala-lang.modules#scala-xml_2.12;1.0.5->...
 [debug] 	report for default#mazes$sources;0.1 scala-tool produced in /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/resolution-cache/reports/default-mazes$sources-scala-tool.xml
-[debug] 	resolve done (176ms resolve - 337ms download)
+[debug] 	resolve done (204ms resolve - 898ms download)

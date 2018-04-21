@@ -1,6 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/MazePosition.scala:47:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Direction(_, _)[0m
-[0m[[0m[33mwarn[0m] [0m[0m    currentDir match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere was one feature warning; re-run with -feature for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/CSVWriter.scala:7:32: imported `CSVWriter' is permanently hidden by definition of object CSVWriter[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport au.com.bytecode.opencsv.CSVWriter[0m
+[0m[[0m[33mwarn[0m] [0m[0m                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

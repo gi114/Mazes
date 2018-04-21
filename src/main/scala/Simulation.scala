@@ -6,8 +6,9 @@ object Simulation extends MazeGenerator {
 
   def main(args: Array[String]): Unit = {
 
+    CSVWriter.clearFile
     val maze = Scenarios.buildMap
-    (1 to 10) foreach (_ => println(travel(maze, Loc(14,12))))
+    (1 to 10) foreach (i => println(i, travel(maze, Loc(14,12))))
 
   }
 
@@ -21,4 +22,6 @@ object Simulation extends MazeGenerator {
     }
     trajectory
   }
+
+
 }

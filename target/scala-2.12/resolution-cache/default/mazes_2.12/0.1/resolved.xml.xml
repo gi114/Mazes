@@ -4,7 +4,7 @@
 		module="mazes_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180327101714"
+		publication="20180421074642"
 	>
 		<description>
 		mazes
@@ -35,5 +35,6 @@
 		<dependency org="org.scalamock" name="scalamock_2.12" rev="4.1.0" conf="test->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.4" conf="test->default(compile)"/>
 		<dependency org="org.mockito" name="mockito-core" rev="1.8.5" conf="test->default(compile)"/>
+		<dependency org="au.com.bytecode" name="opencsv" rev="2.4" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
