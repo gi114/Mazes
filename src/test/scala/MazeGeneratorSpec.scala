@@ -29,8 +29,8 @@ class MazeGeneratorSpec extends UnitSpec with MockitoSugar {
       Loc(1,10), Loc(9,10),
       Loc(1,11), Loc(3,11), Loc(5,11), Loc(7,11), Loc(9,11), Loc(11,11), Loc(12,11), Loc(13,11),
       Loc(5,12), Loc(13,12),
-      Loc(1,13), Loc(3,13), Loc(5,13), Loc(6,13), Loc(7,13), Loc(9,13), Loc(10,13), Loc(11,13), Loc(13,13),
-      Loc(3,13), Loc(13,14)
+      Loc(1,13), Loc(3,13), Loc(5,13), Loc(7,13), Loc(9,13), Loc(11,13), Loc(12,13), Loc(13,13),
+      Loc(14,13), Loc(5,14)
     )
 
     !(wallsLoc forall (mapMaze contains))

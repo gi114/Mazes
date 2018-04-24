@@ -17,11 +17,11 @@ class MazeGenerator {
   }
 
   def mapRow(y: Int): Seq[Loc] = {
-    val seq = (0 until height).toList.map(x => mapCell(y, x))
+    val seq = (0 until width).toList.map(x => mapCell(x, y))
     partitionEither(seq)._1
   }
 
-  def mapCell(y: Int, x: Int): Either[Loc, Wall] = {
+  def mapCell(x: Int, y: Int): Either[Loc, Wall] = {
     TemplateBuilder.getLocationValue(Loc(x,y)).toSeq.head match {
       case -1 => Right(Wall(x,y))
       case 0 => Left(Loc(x,y))

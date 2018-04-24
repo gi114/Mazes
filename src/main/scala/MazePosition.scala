@@ -31,7 +31,11 @@ object MazePosition {
       this + dir
     }
 
-    def unapply = (List(this.x), List(this.y))
+    def isExit2(exitA: Loc, exitB: Loc): Boolean = {
+      if (this == exitA) true
+      else if (this == exitB) true
+      else false
+    }
 
   }
 
