@@ -15,10 +15,18 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
     possibleDirections.map(current + _).filter(_.inBounds).intersect(locations)
   }
 
-  def findNextAvailableDirection(current: Loc, currentDirection: Direction): Direction = {
-    val dir = getRightMostDirections(currentDirection)
-    if (openInDirection(current, dir)) dir
-    else currentDirection
+  def findNextAvailableDirection(current: Loc, currentDirection: Option[Direction]): Direction = {
+    currentDirection match {
+      case None => {
+        val directions = findNeighbors(current, None).toList.map(loc => loc -- current)
+        rightmost(directions).head
+      }
+      case Some(currDir) => {
+        val dir = getRightMostDirections(currDir)
+        if (openInDirection(current, dir)) dir
+        else currDir
+      }
+    }
   }
 
   def openNorth(loc: Loc): Boolean = openInDirection(loc, North)
@@ -28,6 +36,11 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
 
   private def openInDirection(loc: Loc, dir: Direction): Boolean =
     locations.contains(loc + dir)
+
+  private def rightmost(list: List[Direction]) = {
+    val orderedDirections = List(West, North, East, South)
+    orderedDirections.filter(dir => list contains dir)
+  }
 
 }
 

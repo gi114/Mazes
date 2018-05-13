@@ -31,13 +31,14 @@ object Scenarios {
     }
 
 
-/*  def rightHand(maze: Maze, currentLoc: Loc, direction: Direction, path: Set[Loc]): Set[Loc] = {
-    if (currentLoc == ExitB) path
-    else {
-      val newDirection = maze.findNextAvailableDirection(currentLoc, direction)
-      val updateLoc = currentLoc.updateLocation(newDirection)
-      rightHand(maze, updateLoc, newDirection, path)
+  def rightHand(maze: Maze, currentLoc: Loc, direction: Option[Direction], path: Set[Loc], exits: List[Loc] = List(Loc(14,14), Loc(14,12))): Set[Loc] = {
+    exits.find(exit => exit == currentLoc) match {
+      case Some(_) => path
+      case None =>
+        val newDirection = maze.findNextAvailableDirection(currentLoc, direction)
+        val updateLoc = currentLoc.updateLocation(newDirection)
+        rightHand(maze, updateLoc, Some(newDirection), path)
     }
-  }*/
+  }
 }
 
