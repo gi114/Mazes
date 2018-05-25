@@ -15,6 +15,12 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
     possibleDirections.map(current + _).filter(_.inBounds).intersect(locations)
   }
 
+  def findDirection(current: Loc, currDir: Direction): Direction = {
+    val dir = getRightMostDirections(currDir)
+    if (openInDirection(current, dir)) dir
+    else findDirection(current, currDir.nextLeft)
+  }
+
   def findNextAvailableDirection(current: Loc, currentDirection: Option[Direction]): Direction = {
     currentDirection match {
       case None => {
@@ -22,9 +28,7 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
         rightmost(directions).head
       }
       case Some(currDir) => {
-        val dir = getRightMostDirections(currDir)
-        if (openInDirection(current, dir)) dir
-        else currDir
+       findDirection(current, currDir)
       }
     }
   }
@@ -44,40 +48,6 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
 
 }
 
-class DFSMaze(val height: Int, val width: Int, val locations: Set[Loc], val visited: Set[Loc]) {
 
-  implicit val temp = TemplateBuilder.getTemplate
 
-  def this(locations: Set[Loc], visited: Set[Loc]) {
-    this(15, 15, locations, visited)
-  }
 
-  def markVisited(loc: Loc): DFSMaze = {
-    new DFSMaze(height, width, locations, visited + loc)
-  }
-
-  /*def addWall(wall: Loc): Maze =
-    new Maze(height, width, walls + wall, visited)*/
-
-  def isVisited(loc: Loc): Boolean = {
-    visited.contains(loc)
-  }
-
-  def findNeighbors(current: Loc): Set[Loc] = {
-    directions.map(current + _).filter(_.inBounds) -- visited
-  }
-
-  def printMaze(): Unit = {
-    (0 to height).toList.map(y => printRow(y))
-  }
-
-  def printRow(y: Int): Unit = {
-    (0 to width).toList.map(x => printCell(y, x))
-  }
-
-  def printCell(y: Int, x: Int): Unit = {
-    if (locations.contains(Loc(x, y))) print(' ')
-    else print('*')
-  }
-
-}

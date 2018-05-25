@@ -1,5 +1,5 @@
 import MazePosition.{Loc, Wall}
-import Simulation._
+import Simulation.{mapCell, _}
 import org.mockito.Mockito
 import org.mockito.Matchers.{any, eq => mockEq}
 import org.mockito.Mockito._
@@ -12,6 +12,11 @@ class MazeGeneratorSpec extends UnitSpec with MockitoSugar {
   "Map Cell" should "successfully map 0 or -1 to corresponding Maze location type" in {
     mapCell(0,0) shouldBe Left(Loc(0,0))
     mapCell(1,1) shouldBe Right(Wall(1,1))
+
+    val thrown = intercept[NoSuchElementException] {
+      mapCell(15,8)
+    }
+    //thrown.msg shouldBe "not a valid location"
   }
 
   "Map Maze" should "successfully map Template to corresponding sequence of available locations Loc" in {

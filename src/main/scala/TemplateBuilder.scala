@@ -20,7 +20,7 @@ object TemplateBuilder {
     Array( 0,-1, 0,-1, 0,-1,-1,-1, 0,-1,-1,-1, 0,-1, 0),
     Array( 0, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 0))
 
-  def getLocationValue(loc: Loc): Either[NotificationErrors, Int] =  {
+  def getLocationValue(loc: Loc): Either[NoSuchElementException, Int] =  {
     loc.validLocation match {
       case Some(location) => Right(getTemplate(location.x)(location.y))
       case None => Left(NoSuchTemplateElementException(s"not a valid location"))

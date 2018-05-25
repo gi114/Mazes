@@ -6,6 +6,15 @@ object MazePosition {
     implicit val mask: (Int, Int) = (-1, -1)
     def ! = Direction(this.dx * mask._1, this.dy * mask._2)
 
+    def nextLeft: Direction = {
+      this match {
+        case West => South
+        case South => East
+        case East => North
+        case North => West
+      }
+    }
+
   }
 
   case class Loc(x: Int, y: Int) {

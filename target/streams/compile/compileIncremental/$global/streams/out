@@ -1,1 +1,83 @@
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/NoSuchTemplateElementException.class: class NoSuchTemplateElementException$ now provided by /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/NoSuchTemplateElementException$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/Errors.scala, /Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/TemplateBuilder.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set(/Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes/NoSuchTemplateElementException.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(NotificationErrors, NoSuchTemplateElementException, ExceptionCatcher, TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set(/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/TemplateBuilder.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(NotificationErrors, NoSuchTemplateElementException, ExceptionCatcher, TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/Errors.scala, /Users/giuliaippoliti/Documents/Biocomputation/mazes/src/main/scala/TemplateBuilder.scala)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 2 Scala sources to /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.1:compile for Scala 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.1:compile for Scala 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5498fbd0 for Scala compiler version 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/giuliaippoliti/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes:/Users/giuliaippoliti/.ivy2/cache/au.com.bytecode/opencsv/jars/opencsv-2.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 12.337581236 s[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from NotificationErrors...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(NotificationErrors)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(NotificationErrors)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of MazeGenerator: Set(UsedName(NotificationErrors,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(NotificationErrors,ModifiedNames(changes = UsedName(NotificationErrors,[Default]))) invalidates 2 classes due to The NotificationErrors has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(NotificationErrors,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(NotificationErrors)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(MazeGenerator)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from NoSuchTemplateElementException...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(NoSuchTemplateElementException)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(NoSuchTemplateElementException)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of TemplateBuilder: Set(UsedName(NoSuchTemplateElementException,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(NoSuchTemplateElementException,ModifiedNames(changes = UsedName(message,[Default]), UsedName(NoSuchTemplateElementException,[Default]))) invalidates 2 classes due to The NoSuchTemplateElementException has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(message,[Default]), UsedName(NoSuchTemplateElementException,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(NoSuchTemplateElementException)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from TemplateBuilder...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of MazeGenerator: Set(UsedName(getLocationValue,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(TemplateBuilder,ModifiedNames(changes = UsedName(getLocationValue,[Default]))) invalidates 2 classes due to The TemplateBuilder has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(getLocationValue,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(TemplateBuilder)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(MazeGenerator)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set(MazeGenerator)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(MazeGenerator)[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding Scenarios by MazeGenerator[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding Simulation by Scenarios[0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set(MazeGenerator)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.1:compile for Scala 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.1.1:compile for Scala 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 551446b6 for Scala compiler version 2.12.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/giuliaippoliti/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/giuliaippoliti/Documents/Biocomputation/mazes/target/scala-2.12/classes:/Users/giuliaippoliti/.ivy2/cache/au.com.bytecode/opencsv/jars/opencsv-2.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.348819781 s[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m

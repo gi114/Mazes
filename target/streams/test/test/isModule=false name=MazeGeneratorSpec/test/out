@@ -1,5 +1,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mMazeGeneratorSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMap Cell[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should successfully map 0 or -1 to corresponding Maze location type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should successfully map 0 or -1 to corresponding Maze location type *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected exception NoSuchTemplateElementException to be thrown, but java.util.NoSuchElementException was thrown (MazeGeneratorSpec.scala:16)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMap Maze[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should successfully map Template to corresponding sequence of available locations Loc[0m[0m

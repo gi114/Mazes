@@ -4,7 +4,7 @@
 		module="mazes$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180421074651"
+		publication="20180525191230"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
