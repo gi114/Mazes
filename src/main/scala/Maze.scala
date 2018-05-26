@@ -9,14 +9,14 @@ class Maze(val height: Int, val width: Int, val locations: Set[Loc], val visited
 
   def findNeighbors(current: Loc, currDir: Option[Direction]): Set[Loc] = {
     val possibleDirections = currDir match {
-      case Some(dir) => directions - (dir!)
+      case Some(dir) => directions.toSet - (dir!)
       case None => directions
     }
-    possibleDirections.map(current + _).filter(_.inBounds).intersect(locations)
+    possibleDirections.map(current + _).filter(_.inBounds).toSet.intersect(locations)
   }
 
   def findDirection(current: Loc, currDir: Direction): Direction = {
-    val dir = getRightMostDirections(currDir)
+    val dir = currDir.nextRight
     if (openInDirection(current, dir)) dir
     else findDirection(current, currDir.nextLeft)
   }

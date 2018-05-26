@@ -15,6 +15,15 @@ object MazePosition {
       }
     }
 
+    def nextRight: Direction = {
+      this match {
+        case West => North
+        case South => West
+        case East => South
+        case North => East
+      }
+    }
+
   }
 
   case class Loc(x: Int, y: Int) {
@@ -40,12 +49,6 @@ object MazePosition {
       this + dir
     }
 
-    def isExit2(exitA: Loc, exitB: Loc): Boolean = {
-      if (this == exitA) true
-      else if (this == exitB) true
-      else false
-    }
-
   }
 
   case class Wall(x: Int, y: Int)
@@ -54,16 +57,9 @@ object MazePosition {
   val South = Direction(0,1)
   val West = Direction(-1,0)
   val East = Direction(1,0)
-  val directions = Set(North, East, South, West)
+  val directions = List(North, West, South, East)
 
-  def getRightMostDirections(currentDir: Direction): Direction = {
-    currentDir match {
-      case West => North
-      case South => West
-      case East => South
-      case North => East
-    }
-  }
+
 
   case class Trajectory(x: List[Int], y: List[Int])
 
