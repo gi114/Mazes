@@ -9,17 +9,16 @@ import org.scalatest.{BeforeAndAfterEach, FreeSpec, Matchers}
 
 class MazeGeneratorSpec extends UnitSpec with MockitoSugar {
 
-  "Map Cell" should "successfully map 0 or -1 to corresponding Maze location type" in {
+  "Map Cell" should "successfully map 0 or -1 to corresponding Maze location type or raise a NoSuchElementException" in {
     mapCell(0,0) shouldBe Left(Loc(0,0))
     mapCell(1,1) shouldBe Right(Wall(1,1))
 
-    val thrown = intercept[NoSuchElementException] {
+    intercept[NoSuchElementException] {
       mapCell(15,8)
     }
-    //thrown.msg shouldBe "not a valid location"
   }
 
-  "Map Maze" should "successfully map Template to corresponding sequence of available locations Loc" in {
+  "Map Maze" should "successfully exclude walls to the sequence of available locations in the maze" in {
     val wallsLoc = Seq(
       Loc(11,0),
       Loc(1,1), Loc(3,1), Loc(4,1), Loc(5,1), Loc(7,1), Loc(8,1), Loc(9,1), Loc(11,1), Loc(13, 1),
