@@ -3,26 +3,31 @@ object MazePosition {
 
   case class Direction(dx: Int, dy: Int) {
 
+    implicit val getDirections: List[Direction] = directions
     implicit val mask: (Int, Int) = (-1, -1)
     def ! = Direction(this.dx * mask._1, this.dy * mask._2)
 
     def nextLeft: Direction = {
-      this match {
+/*      this match {
         case West => South
         case South => East
         case East => North
         case North => West
       }
+      */
+      val turnLeft = directions.toIterator.dropWhile(_ != this).toList
+      if (turnLeft.head == directions.last) directions.head
+      else turnLeft.tail.head
     }
 
     def nextRight: Direction = {
-      this match {
-        case West => North
-        case South => West
-        case East => South
-        case North => East
-      }
+      val reversedDirections = directions.reverse
+      val turnLeft = reversedDirections.toIterator.dropWhile(_ != this).toList
+      if (turnLeft.head == reversedDirections.last) reversedDirections.head
+      else turnLeft.tail.head
+
     }
+
 
   }
 
@@ -58,8 +63,6 @@ object MazePosition {
   val West = Direction(-1,0)
   val East = Direction(1,0)
   val directions = List(North, West, South, East)
-
-
 
   case class Trajectory(x: List[Int], y: List[Int])
 

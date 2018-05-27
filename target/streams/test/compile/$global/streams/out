@@ -1,2 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0mthere was one feature warning; re-run with -feature for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/giuliaippoliti/Documents/Biocomputation/mazes/src/test/scala/MazePositionSpec.scala:6:47: class FlatSpec needs to be a trait to be mixed in[0m
+[0m[[0m[31merror[0m] [0m[0mobject MazePositionSpec extends UnitSpec with FlatSpec with MockFactory {[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
