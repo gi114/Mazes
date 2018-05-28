@@ -1,6 +1,7 @@
 
 object MazePosition {
 
+
   case class Direction(dx: Int, dy: Int) {
 
     implicit val getDirections: List[Direction] = directions
@@ -31,15 +32,31 @@ object MazePosition {
 
   }
 
+  /*case class Coordinate(int: Int) {
+    implicit def coordinateToInt(coordinate: Coordinate): Int = coordinate.int
+  }
+
+  case object Coordinate {
+    def apply(int: Int): PartialFunction[Int, Coordinate] = {
+      case x if x >= 0 && x < 15 => new Coordinate(x)
+    }
+  }*/
+
+
   case class Loc(x: Int, y: Int) {
+
+/*    def apply(x: Int, y: Int): Option[Loc] = {
+      val newLocation = Loc(x,y)
+      if (newLocation.inBounds) Some(newLocation)
+      else None
+    }*/
+
+    def inBounds: Boolean = this.x >= 0 && this.x < 15 && this.y >= 0 && this.y < 15
 
     def +(that: Direction): Loc = Loc(x + that.dx, y + that.dy)
     def --(loc: Loc): Direction = {
       Direction(loc.x - this.x, loc.y - this.y)
     }
-
-    def inBounds: Boolean =
-      this.x >= 0 && this.x < 15 && this.y >= 0 && this.y < 15
 
     def validLocation: Option[Loc] = {
       if (this.inBounds) Some(this)
