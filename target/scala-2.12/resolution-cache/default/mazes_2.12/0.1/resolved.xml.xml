@@ -4,7 +4,7 @@
 		module="mazes_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180527093111"
+		publication="20180528154829"
 	>
 		<description>
 		mazes
@@ -34,6 +34,7 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.0" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalamock" name="scalamock_2.12" rev="4.1.0" conf="test->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.4" conf="test->default(compile)"/>
+		<dependency org="org.scala-sbt" name="compiler-bridge_2.12" rev="1.1.1" conf="test->default(compile)"/>
 		<dependency org="org.mockito" name="mockito-core" rev="1.8.5" conf="test->default(compile)"/>
 		<dependency org="au.com.bytecode" name="opencsv" rev="2.4" conf="compile->default(compile)"/>
 	</dependencies>
